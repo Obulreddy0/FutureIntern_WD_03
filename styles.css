@@ -1,0 +1,122 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    height: 100vb;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(photo.avif);
+    background-size: cover;
+    
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.215);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.009);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.927);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(15, 14, 14);
+    padding: 40px 30px;
+    width: 350px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+input[type="text"], select {
+    background: rgb(206, 204, 243);
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+input[type="text"]:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    background: rgba(255, 255, 255, 0.4); /* Increase opacity for better visibility */
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    color: black; /* Ensure the text is black for visibility */
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+select option {
+    background-color: rgba(255, 255, 255, 0.9); /* Solid background for the options */
+    color: black; /* Ensure the text inside the options is black */
+}
+
+
+button {
+    background: rgb(211, 11, 141);
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: rgb(198, 23, 134);
+    transform: translateY(-2px);
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 1.4em;
+    color: white;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
